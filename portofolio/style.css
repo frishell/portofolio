@@ -1,0 +1,666 @@
+.slabo-27px-regular {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease; /* Transisi latar belakang dengan durasi 0.5 detik dan efek yang mulus */
+}
+
+/*-------------------------------- 
+            navbar 
+----------------------------------*/
+.navbar {
+    position: fixed;
+    top: 45px;
+    left: 520px;
+    right: 570px;
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: #ffffff00;
+    box-shadow: 0 2px 4px rgba(16, 15, 15, 0.317);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgba(255, 255, 255, 0.297);
+}
+
+.navbar .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .nav-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .nav-list ul li {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.navbar .nav-list ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
+    transition: background-color 0.3s ease; /* Transisi latar belakang untuk item menu dengan durasi 0.3 detik */
+}
+
+.navbar .nav-list ul li a:hover {
+    text-decoration: underline;
+    background-color: #000000b7;
+    color: white;
+}
+
+.navbar .nav-list .logo img {
+    width: 40px;
+}
+ .menu-link {
+  transition: filter 0.3s ease; 
+}
+
+/*---------------------------------- 
+                  main 
+------------------------------------*/
+
+main {
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+  overflow: hidden;
+}
+
+  /*---------------------------------
+                  home
+  ------------------------------------*/
+.content {
+  height: 858px;
+  width: 100%;
+  /* background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg); */
+  background-image: url("asset/img/background.jpg");
+  background-size: cover;
+  position: relative;
+  
+}
+
+.content .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+} 
+
+.content .card img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    object-fit: cover;
+}
+
+.content .card::after {
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    z-index: -1; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+  
+  .teksHome h1 {
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    transform: translate(-49%, -40%);
+    z-index: 1;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+  }
+  .teksHome .h1{
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    transform: translate(-49%, -48%);
+    z-index: 1;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: #000000;
+  }
+
+  
+  .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  
+  @-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+    
+
+
+  .content {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main aside {
+    display: flex;
+    position: relative;
+    left: 50rem;
+  }
+   
+  main aside .social-media {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    position: relative;
+  }
+   
+  main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #ffffff49;
+    box-shadow: 0 2px 4px rgba(16, 15, 15, 0.799);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+   
+  main aside .social-media li {
+    list-style-type: none;
+  }
+   
+  main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.783);
+    transition: all 0.1s ease-in-out;
+  }
+   
+  main aside .social-media li a:hover {
+    color: #ffffff;
+  }
+  @media screen and (max-width: 768px) {
+    main aside .social-media ul {
+      border-radius: unset;
+      box-shadow: unset;
+    }
+  
+    main aside .social-media {
+      width: 100%;
+      order: 2;
+    }
+    
+    main :not(.aside) {
+      grid-column: 1 / span 2;  
+    }
+  }
+  
+
+  /*-------------------------------------
+                       About
+  --------------------------------------- */
+
+.About {
+  display: flex;
+  flex-direction: column-reverse;
+  /* justify-content: center; */
+  /* flex-direction: row-reverse; Mengatur gambar berada di sebelah kiri */
+  height: 858px;
+  width: 100%;
+  /* background-image: url("asset/img/backgroundAbout.jpg"); */
+  background-color: #ffffff;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.about .about-teks {
+  text-align: center;
+
+}
+
+.about-teks .aboutImage img{
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  transform: translate(-15%, -55%);
+  z-index: 3;
+  width: 320px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+  height: 390px; /*Sesuaikan tinggi gambar sesuai kebutuhan */
+  margin-bottom: 20px; /* Sesuaikan jarak antara gambar dan teks */
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  /* background-position: 25% 75%; */
+}
+
+.about-teks {
+  /* text-align: center; */
+  padding-top: 30px; /* Atur jarak ke atas dari teks */
+  color: rgb(0, 0, 0);
+  z-index: 999; /* Membuat warna teks menjadi terang di atas gambar */
+}
+
+@media screen and (max-width: 480px) {
+  .about .about-teks .aboutImage img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.about-teks h2{
+  position: absolute;
+  top: 29%;
+  left: 55%;
+  transform: translate(-55%, -29%);
+  z-index: 1;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 60px;
+  color: #000000;
+}
+.about-teks h3{
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-20%, -25%);
+  z-index: 1;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: rgb(58, 211, 222); /* Ganti warna sesuai keinginan Anda */
+  text-decoration-thickness: 2px; /* Ganti ukuran sesuai keinginan Anda */
+  text-decoration-skip-ink: none; /* Memastikan garis bawah berukuran penuh */
+  text-underline-offset: 3px; /* Ganti panjang sesuai keinginan Anda */
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Mengatur dua kolom dengan lebar yang sama */
+  gap: 0px;
+}
+
+.bio1,
+.bio2 {
+  position: relative;
+}
+
+.bio1 ul,
+.bio2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bio1 ul li,
+.bio2 ul li {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.bio1 ul li strong,
+.bio1 ul li span,
+.bio2 ul li strong,
+.bio2 ul li span {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.bio1 ul li strong {
+  text-align: right;
+}
+
+.bio1 {
+  background-color: rgba(0, 255, 255, 0);
+  top: -100%;
+  left: -20%;
+  transform: translate(90%, -120%);
+}
+
+.bio2 {
+  background-color: rgba(255, 0, 0, 0);
+  top: -100%;
+  left: -40%;
+  transform: translate(60%, -120%);
+}
+
+
+/*----------------------------------------
+              skils
+------------------------------------------*/
+.skils{
+  top: 1px;
+  bottom: 3px;
+  transform: translate(-1%, -3%);
+  width: 1659px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background-color: #535e8c46;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.skils .resume-teks .skill{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  bottom: 30px;
+  top: -10px;
+  transform: translate(-30px, 10px);
+}
+.skils .resume-teks .skill .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.skils .resume-teks .skill .progress .ability {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  color: #000000;
+}
+
+.skils .resume-teks .skill .progress .ability .val {
+  float: right;
+  font-style: normal;
+}
+
+.skils .resume-teks .skill .progress .bar {
+  background: #ffffff;
+  height: 10px;
+  width: 750px;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar1,
+.skils .resume-teks .skill .progress .bar .progress-bar2,
+.skils .resume-teks .skill .progress .bar .progress-bar3,
+.skils .resume-teks .skill .progress .bar .progress-bar4,
+.skils .resume-teks .skill .progress .bar .progress-bar5,
+.skils .resume-teks .skill .progress .bar .progress-bar6 {
+  height: 10px;
+  transition: width 0.9s;
+  background-color: #320443;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar1 {
+  width: 25%;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar2 {
+  width: 25%;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar3 {
+  width: 20%;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar4 {
+  width: 60%;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar5 {
+  width: 50%;
+}
+
+.skils .resume-teks .skill .progress .bar .progress-bar6 {
+  width: 50%;
+}
+.animate {
+  transition: width 5s ease-in-out; /* Ubah durasi dan efek transisi sesuai kebutuhan */
+}
+
+
+/*-----------------------------------------
+                resume
+-------------------------------------------*/
+.resume{
+  background-color:#ffffff;
+  padding:1% 0;
+}
+.resume .container{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 5.5% 6%;
+  
+}
+.resume .container h2{
+  text-decoration: underline;
+  text-decoration-color: rgb(73, 41, 122); /* Ganti warna sesuai keinginan Anda */
+  text-decoration-thickness: 4px; /* Ganti ukuran sesuai keinginan Anda */
+  text-decoration-skip-ink: none; /* Memastikan garis bawah berukuran penuh */
+  text-underline-offset: 3px; /* Ganti panjang sesuai keinginan Anda */
+}
+.resume .resume-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Mengatur dua kolom dengan lebar yang sama */
+  /* gap: 0px; */
+
+}
+.resume .resume-title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #0033ff;
+  padding: 1% 2% -5%;
+
+}
+
+.resume .resume-item {
+  padding: 0 0 30px 70px;
+  margin-top: -2px;
+  border-left: 2px solid #0b0101;
+  position: relative;
+  padding: 1% 3%;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #183063;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9a7;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 3px;
+  
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*----------------------------------------
+                contact 
+------------------------------------------ */
+/* .contact{
+  background-color: #d10000;
+} */
+
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+} */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Menjadikan box 1 dan box 2 sejajar */
+  padding: 60px;
+}
+
+.contact-info, .contact-form {
+  flex: 1; /* Menyamakan lebar box 1 dan box 2 */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 20px 40px rgba(255, 0, 0, 0.169);
+  margin-top: 90px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-form form {
+  max-width: 400px;
+  margin: 0 auto;
+  animation: slide-up 0.5s ease forwards; /* Menambahkan animasi pada formulir kontak */
+  opacity: 0; /* Membuat elemen awalnya tersembunyi */
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1; /* Menampilkan elemen saat animasi selesai */
+    transform: translateY(0); /* Munculkan elemen dari bawah */
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+/*------------------------------------
+              footer
+ -------------------------------------*/
+footer {
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 20px 0; /* Padding atas dan bawah */
+  text-align: center; /* Posisi teks menjadi tengah */
+  margin-top: 20px; /* Jarak dari bagian kontak */
+}

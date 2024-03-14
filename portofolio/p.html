@@ -1,0 +1,64 @@
+<div class="biodata">
+
+    <div class="bio1">
+      <ul>
+        <li><strong>Birthday:</strong> <span>11 maret 2004</span></li>
+        <li><strong>Website:</strong> <span></span></li>
+        <li><strong>Phone:</strong> <span>081334655462</span></li>
+        <li><strong>City:</strong> <span>sidoarjo,jawatimur,Indonesia</span></li>
+      </ul>
+      </div>
+
+    <div class="bio2">
+      <ul>
+        <li><strong>Age:</strong> <span>19</span></li>
+        <li><strong>Degree:</strong> <span>junior</span></li>
+        <li><strong>PhEmailone:</strong> <span>jumadilprimadani58@gmail.com</span></li>
+        <li><strong>Freelance:</strong> <span>Available</span></li>
+      </ul>
+    </div>
+
+    </div>
+
+
+    .box {
+      --mask:
+        radial-gradient(86.82px at 50% 119.25px,#000 99%,#0000 101%) calc(50% - 90px) 0/180px 100%,
+        radial-gradient(86.82px at 50% -74.25px,#0000 99%,#000 101%) 50% 45px/180px 100% repeat-x;
+      -webkit-mask: var(--mask);
+              mask: var(--mask);
+    }
+
+    <div class="ui right labeled input">
+      <input type="text" placeholder="Find domain">
+      <div class="ui dropdown label">
+        <div class="text">.com</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">.com</div>
+          <div class="item">.net</div>
+          <div class="item">.org</div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    .contact-container {
+      position: relative; /* Memastikan elemen melayang terkait dengan elemen kontainer */
+      background-color: #f8f9fa; /* Warna latar belakang */
+      padding: 50px; /* Padding untuk memisahkan konten dari tepi kontainer */
+    }
+    
+    .floating-box {
+      position: absolute; /* Membuat elemen melayang */
+      top: 50%; /* Menempatkan elemen melayang di tengah vertikal */
+      left: 50%; /* Menempatkan elemen melayang di tengah horizontal */
+      transform: translate(-50%, -50%); /* Menyesuaikan posisi agar elemen melayang tepat di tengah */
+      background-color: #007bff; /* Warna latar belakang elemen melayang */
+      padding: 20px; /* Padding untuk konten dalam elemen melayang */
+      border-radius: 10px; /* Membuat sudut elemen melayang menjadi bulat */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek melayang */
+    }
